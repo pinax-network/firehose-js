@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "buf": "buf generate"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.2.3",
+    "@grpc/grpc-js": "^1.12.5",
+    "@grpc/proto-loader": "^0.7.13",
+    "bs58": "^6.0.0",
+    "google-protobuf": "^3.21.4",
+    "protobufjs": "^7.4.0"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.49.0",
+    "@bufbuild/protoc-gen-es": "^2.2.3",
+    "grpc-tools": "^1.12.4"
+  }
+}
