@@ -1,3 +1,5 @@
+# ⚠️ ⁉️ ACTIVE DEVELOPMENT ⚠️ ⁉️
+
 # Firehose JS SDK
 
 ## Quickstart

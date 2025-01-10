@@ -1,7 +1,9 @@
 # Learn more: https://buf.build/docs/configuration/v2/buf-gen-yaml
 version: v2
 inputs:
-  - directory: proto
+  - module: buf.build/streamingfast/firehose-solana:main
+  - module: buf.build/streamingfast/firehose:main
+
 plugins:
   - local: protoc-gen-es
     opt: target=ts

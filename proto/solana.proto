@@ -33,8 +33,6 @@ message Message {
     MessageHeader header = 1;
     repeated bytes account_keys = 2;
     bytes recent_blockhash = 3;
-    // Top-level instructions
-    // T instructions (?)
     repeated CompiledInstruction instructions = 4;
     bool versioned = 5;
     repeated MessageAddressTableLookup address_table_lookups = 6;
@@ -57,9 +55,6 @@ message TransactionStatusMeta {
     uint64 fee = 2;
     repeated uint64 pre_balances = 3;
     repeated uint64 post_balances = 4;
-    // InnerInstructions are instructions made to external programs as part of the transaction.
-    //
-    // Count == len(I)
     repeated InnerInstructions inner_instructions = 5;
 //    bool inner_instructions_none = 10;
     repeated string log_messages = 6;
@@ -77,7 +72,6 @@ message TransactionStatusMeta {
     // Set to `None` for txs executed on earlier versions.
     optional uint64 compute_units_consumed = 16;
 }
-
 
 message TransactionError {
     bytes err = 1;
